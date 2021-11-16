@@ -1,0 +1,194 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Logo ckpinfo -->
+		<link href="img/logo.png" type="image/png" rel="icon"/>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+		<!-- Bootstrap Icon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+		<script> 
+			$(function(){
+	    	//Kuliner Feed
+	    	$("#Feed-1").load("toko/feed/Feed-1.html"); 
+	    	$("#Feed-2").load("toko/feed/Feed-2.html"); 
+	    	$("#Feed-3").load("toko/feed/Feed-3.html"); 
+	    	$("#Feed-4").load("toko/feed/Feed-4.html"); 
+	    	$("#Feed-5").load("toko/feed/Feed-5.html"); 
+
+	    	//Kuliner Slide
+	    	$("#Slide-1").load("toko/slide/Slide-1.html"); 
+	    	$("#Slide-2").load("toko/slide/Slide-2.html"); 
+	    	$("#Slide-3").load("toko/slide/Slide-3.html"); 
+	    	$("#Slide-4").load("toko/slide/Slide-4.html"); 
+	    });
+	</script> 
+
+	<!-- Animated AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>ckpinfo - Media Informasi Cikampek</title>
+</head>
+<!-- <body style="background-color: #f3e707;"> -->
+	<body style="background-color: #dddddd;">
+
+		<nav class="navbar fixed-top navbar-light bg-light" style="background-color: #fff0 !important; padding-top: 0rem; padding-bottom: 0rem;">
+			<div class="container" style="margin: .5rem;">
+				<a class="navbar-brand" href="link.html"><h1><i class="bi bi-arrow-left-circle-fill"></i></h1></a>
+			</div>
+		</nav>
+
+		<div class="container mt-5" style="padding-top: .5rem;">
+
+			<div class="row">
+				<div class="col">
+					<div class="row">
+						<div class="col-2">
+							<img src="img/logo.png" width="45px" style="border-radius: 50%;">
+						</div>
+						<div class="col" style="margin-left: -.5rem;">
+							<div class="btn-group mx-auto" role="group" aria-label="Basic example">
+								<button type="button" class="btn btn-light" style="border-radius: 2rem 0rem 0rem 2rem;"><i class="bi bi-search"></i></button>
+								<a href="search.html" type="button" class="btn btn-light" style="border-radius: 0rem 2rem 2rem 0rem;"><marquee direction="left" scrollamount="4"> Cari makanan dan minuman favorite kamu disini..</marquee></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col">
+					<div class="alert alert-success shadow" role="alert" style="border-radius: 1rem; background-color: #6c9b84; color: #fff; border-color: #6c9b84;">
+						<div class="row">
+							<div class="col-3">
+								<center>
+									<a href="" style="text-decoration: none; color: #fff;">
+									<h3 style="margin-bottom: 0rem;"><i class="bi bi-info-circle-fill"></i></h3>
+									<b style="font-size: 14px;">Info</b>
+									</a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="" style="text-decoration: none; color: #fff;">
+									<h3 style="margin-bottom: 0rem;"><i class="bi bi-cart-check-fill"></i></h3>
+									<b style="font-size: 14px;">Tips</b>
+									</a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="" style="text-decoration: none; color: #fff;">
+									<h3 style="margin-bottom: 0rem;"><i class="bi bi-bag-fill"></i></h3>
+									<b style="font-size: 14px;">Promo</b>
+									</a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="" style="text-decoration: none; color: #fff;">
+									<h3 style="margin-bottom: 0rem;"><i class="bi bi-shield-fill-check"></i></h3>
+									<b style="font-size: 14px;">Security</b>
+									</a>
+								</center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-1">
+				<div class="contaiener">
+					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						<b style="color: #2c7671; line-height: 2.5rem; font-size: 18px;">Spesial Untuk Kamu!</b>
+						<div class="carousel-inner shadow" style="border-radius: 0.5rem;">
+							<div class="carousel-item active">
+								<img src="img/klien/feed/3.png" class="d-block w-100">
+							</div>
+							<div class="carousel-item">
+								<img src="img/klien/feed/2.png" class="d-block w-100">
+							</div>
+							<div class="carousel-item">
+								<img src="img/klien/feed/1.png" class="d-block w-100">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<br>
+				</div>
+			</div>
+
+			<div class="row mb-3" style="background-color: rgb(134 174 155);">
+				<div class="table-responsive">
+					<table>
+						<tr>
+							<td>
+								<img src="img/slide1.png" width="130pc" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+							</td>
+							<td style="padding-right: 2rem;"></td>
+							<td>
+								<!-- Slide-1 -->
+								<div id="Slide-1"></div>
+							</td>
+
+							<td>
+								<!-- Slide-2 -->
+								<div id="Slide-2"></div>
+							</td>
+
+							<td>
+								<!-- Slide-3 -->
+								<div id="Slide-3"></div>
+							</td>
+
+							<td>
+								<!-- Slide-4 -->
+								<div id="Slide-4"></div>
+							</td>
+
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- Urutan Feed-1 -->
+			<div id="Feed-1"></div>
+
+			<!-- Urutan Feed-2 -->
+			<div id="Feed-2"></div>
+
+			<!-- Urutan Feed-3 -->
+			<div id="Feed-3"></div>
+
+			<!-- Urutan Feed-4 -->
+			<div id="Feed-4"></div>
+
+			<!-- Urutan Feed-5 -->
+			<div id="Feed-5"></div>
+
+		</div> <!-- Close Container -->
+
+		<!-- Animated AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+	</body>
+	</html>
