@@ -21,80 +21,79 @@
 
 		<title>ckpinfo - Media Informasi Cikampek</title>
 		<style>
-			a{
-				text-decoration: none;
-			}
-			.form-control:focus {
-				border-color: #188754;
-				box-shadow: 0 0 0 0.25rem rgb(108 155 132);
-			}
-			.padleft {
-				padding-left: 1.5rem;
-			}
-			* {
-				margin: 0;
-				padding: 0;
-			}
-			.jumbotron{
-				margin-bottom:0 !important;
-				background:#fff;
-			}
-			.fluid_container{
-				background:rgb(15,16,18);
-			}
+      a{
+        text-decoration: none;
+      }
+      .form-control:focus {
+        border-color: #188754;
+        box-shadow: 0 0 0 0.25rem rgb(108 155 132);
+      }
+      .padleft {
+        padding-left: 1.5rem;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .jumbotron{
+        margin-bottom:0 !important;
+        background:#dddddd;
+      }
+      .fluid_container{
+        background:rgb(15,16,18);
+      }
 
-			.parallax {
-				height: 100vh;
-				overflow-x: hidden;
-				overflow-y: auto;
-				perspective: 300px;
-				background: #fff;
-			}
-			.parallax__group {
-				height: 260px;
-				position: relative;
-				transform-style: preserve-3d;
-				transition: transform 0.5s ease 0s;
-				z-index:100;
-				/*height:70%;*/
-			}
-			.parallax__layer {
-				bottom: 0;
-				left: 0;
-				position: absolute;
-				right: 0;
-				top: 0;
-			}
+      .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 300px;
+        background: #dddddd;
+      }
+      .parallax__group {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease 0s;
+        z-index:100;
+        height:100%;
+      }
+      .parallax__layer {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
 
-			.parallax__layer--base {
-				transform: translateZ(0px);
-				z-index: 4;
-			}
-			.parallax__layer--back {
-				transform: translateZ(-300px) scale(2);
-				z-index: 3;
-				height:100%;
-			}
-			body, html {
-				overflow: hidden;
-			}
-			.parallax {
-				font-size: 100%;
-			}
-			img.codepen_image {
-				left: 50%;
-				position: absolute;
-				text-align: center;
-				transform: translate(-50%, -41%);
-			}
-			#group1 {
-				z-index: 3;
-				height: 30%;
-			}
-			#group1 .parallax__layer--back {
-			}
+      .parallax__layer--base {
+        transform: translateZ(0px);
+        z-index: 4;
+      }
+      .parallax__layer--back {
+        transform: translateZ(-300px) scale(2);
+        z-index: 3;
+        height:100%;
+      }
+      body, html {
+        overflow: hidden;
+      }
+      .parallax {
+        font-size: 100%;
+      }
+      img.codepen_image {
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -46%);
+      }
+      #group1 {
+        z-index: 3;
+        height: 30%;
+      }
+      #group1 .parallax__layer--back {
+      }
 
-		</style>
+    </style>
 	</head>
 <body>
 	<nav class="navbar fixed-top navbar-light bg-light" style="background-color: #fff0 !important; padding-top: 0rem; padding-bottom: 0rem;">
@@ -113,12 +112,11 @@
       </div>
     </div>
     <div class="parallax__group">
-      <div class="parallax__layer parallax__layer--base" data-aos="fade-up" data-aos-duration="350">
-
-        <div class="jumbotron jumbotron-fluid" style="transform: translate(0%,13%) !important; background-color: #fff; border-radius: 2rem 2rem 0rem 0rem; height: 100%;">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="jumbotron jumbotron-fluid" style="background-color: #fff; border-radius: 2rem 2rem 0rem 0rem; height: 100%;">
           <div class="container" style="padding-bottom: 3rem;">
           	<center><i class="bi bi-dash-lg" style="color: #000; font-size: 2rem;"></i></center>
-			<div id="myTable">
+				<div id="myTable">
 				<div class="card mb-2 shadow" style="border: 0px solid rgb(255 255 255); background-color: rgb(134 174 155); border-radius: 1rem;">
 					<div class="row">
 						<div class="col-3">
@@ -210,7 +208,27 @@
 					</div>
 				</div>
 
-			</div> <!-- Close #myTable -->
+				<div class="card mb-2 shadow" style="border: 0px solid rgb(255 255 255); background-color: rgb(134 174 155); border-radius: 1rem;">
+					<div class="row">
+						<div class="col-3">
+							<img src="img/klien/search/chicken.jpg" width="100px" style="border-radius: 1rem;">
+							<div class="position-absolute top-0 start-0" style="padding-top: .5rem; padding-left: .5rem;">
+								<p class="card-text" style="font-size: 10px;"><span class="badge rounded-pill bg-warning text-dark shadow">Free Ongkir</span></p>
+							</div>
+						</div>
+						<div class="col" style="padding-left: 1rem;">
+							<strong style="color: #fff;">Chicken Wings (Gowash Coffee)</strong>
+							<p style="font-size: 10px; color: #fff; margin-bottom: 0rem;">
+								Chicken Wings paket mie (chicken wings 2 pcs dan mie), Chicken Wings paket nasi (chicken wings 2 pcs dan nasi).<br>
+								<a href="https://goo.gl/maps/kwjvXGnUsdYJ7nnJ8"><span class="badge rounded-pill bg-primary" style="margin-top: .5rem; font-size: 11px;"><i class="bi bi-geo-alt"></i></span></a>
+								<span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 11px;">Rp.17.000,-</span>
+								<span class="badge rounded-pill bg-success" style="margin-top: .5rem; font-size: 11px;"><a href="https://wa.me/6285777744837" style="color: #fff;"><i class="bi bi-whatsapp"></i> Pesan sekarang</a></span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+					</div> <!-- Close #myTable -->
           </div> <!-- Container -->
         </div>
       </div>
