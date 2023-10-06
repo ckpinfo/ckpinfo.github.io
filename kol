@@ -1,0 +1,295 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Logo ckpinfo -->
+    <link href="img/logo.png" type="image/png" rel="icon"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Animated AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>ckpinfo - Media Informasi Cikampek</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+      a{
+        text-decoration: none;
+      }
+      .form-control:focus {
+        border-color: #188754;
+        box-shadow: 0 0 0 0.25rem rgb(108 155 132);
+      }
+      .padleft {
+        padding-left: 1.5rem;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .jumbotron{
+        margin-bottom:0 !important;
+        background:#dddddd;
+      }
+      .fluid_container{
+        background:rgb(15,16,18);
+      }
+
+      .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 300px;
+        background: #dddddd;
+      }
+      .parallax__group {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease 0s;
+        z-index:100;
+        height:100%;
+      }
+      .parallax__layer {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .parallax__layer--base {
+        transform: translateZ(0px);
+        z-index: 4;
+      }
+      .parallax__layer--back {
+        transform: translateZ(-300px) scale(2);
+        z-index: 3;
+        height:100%;
+      }
+      body, html {
+        overflow: hidden;
+      }
+      .parallax {
+        font-size: 100%;
+      }
+      img.codepen_image {
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -46%);
+      }
+      #group1 {
+        z-index: 3;
+        height: 30%;
+      }
+      #group1 .parallax__layer--back {
+      }
+      h3,h1 {
+        font-family: 'Lobster', cursive;
+      }
+
+    </style>
+  </head>
+  <body style="background-color: #dddddd;">
+
+    <nav class="navbar fixed-top navbar-light bg-light" style="background-color: #fff0 !important; padding-top: 0rem; padding-bottom: 0rem;">
+      <div class="container" style="margin: .5rem;">
+        <a class="navbar-brand" href="#"><h1><i class="bi bi-arrow-left-circle-fill"></i></h1></a>
+      </div>
+    </nav>
+
+  <div class="fluid_container">
+    <div class="parallax">
+     <div id="group1" class="parallax__group">
+       <div class="parallax__layer parallax__layer--back">
+        <img class="codepen_image" src="img/promote.jpg" width="105%">
+      </div>
+    </div>
+    <div class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="jumbotron jumbotron-fluid" style="background-color: #dddddd; border-radius: 2rem 2rem 0rem 0rem; height: 100%;">
+          <center><i class="bi bi-dash-lg" style="color: #000; font-size: 2rem;"></i></center>
+        <div class="container mb-5" data-aos="fade-up">
+          <div class="row">
+            <div class="col">
+              
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Feed Satu</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">FEED 1 KALI POSTING</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di feed selamanya dalam 1 kali posting (Khusus konten gambar)<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 350.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Feed Dua</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">FEED 2 KALI POSTING</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di feed selamanya dalam 2 kali posting (Khusus konten gambar).<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 650.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Feed Hebat</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">FEED 4 KALI POSTING</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di feed selamanya dalam 4 kali posting (Khusus konten gambar).<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 1.200.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Paket Reels</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">VIDEO REELS</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di reels selamanya dalam 1 kali posting (Khusus konten video).<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 400.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Story Tiga</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">STORY 3 KALI POSTING</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di story selama 3 hari dalam 3 kali posting (Konten gambar/video max durasi 1 menit).<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 350.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Story Tujuh</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">STORY 7 KALI POSTING</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di story selama 7 hari dalam 7 kali posting (Konten gambar/video durasi max 1 menit).<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 700.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Paket Yes!</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">FEED & STORY</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di feed dan story selamanya dalam 1 kali posting (Khusus konten gambar).<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 450.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Pasti Meriah</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">LANGGANAN BULANAN</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Iklan akan ditampilkan di feed selamanya, 7 kali posting dalam satu bulan (Khusus konten gambar).<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 2.000.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card shadow mb-2" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Visit Store</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">VISIT STORE</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Tim kami akan datang ke lokasi dan melakukan shooting untuk pembuatan video durasi 1 menit. hasil video tersebut akan ditayangkan di feed/reels/story selama 1 bulan dalam 1 kali posting.<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Rp. 2.000.000,-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card shadow mb-5" style="border: 0px solid rgb(255 255 255); background-color: #000; border-radius: 1rem;">
+                <div class="row">
+                  <div class="col-3">
+                    <strong><center><h3 style="color: #f3b127; margin-left: 1rem; margin-top: 1.3rem;">Pasti Bisa!</h3></center></strong>
+                  </div>
+                  <div class="col">
+                    <strong style="color: #fff;">KUSTOM PROMO</strong>
+                    <p style="font-size: 12px; color: #fff; padding-right: .5rem;">
+                      Maksimalkan promosi produk kamu sekarang juga bersama kami!<br>
+                      <span class="badge rounded-pill bg-danger" style="margin-top: .5rem; font-size: 14px;">Kondisional</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- Close col -->
+          </div>  <!-- Close row -->
+        </div> <!-- Close container -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- Close Fluid Container -->
+
+<!-- Animated AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
